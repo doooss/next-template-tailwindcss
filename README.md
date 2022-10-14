@@ -5,6 +5,8 @@ next-js eslint, prettier, tailwindcss, jest, testing-library, 배포 자동화�
 
 작성된 깃헙 액션 작동방법
 
+0. main, prod 브랜치를 생성합니다.
+
 1. Github 계정 Setting -> Developer Setting -> personal access token 에서 repo 관련 권한을 가진 토큰 발급
 
 2. 발급한 토큰을 해당 템플릿을 사용한 프로젝트 세팅 -> Security -> Actions 에 명칭을 TOKEN 으로 한 후 아래에 이전 단계에서 발급한 토큰 작성
