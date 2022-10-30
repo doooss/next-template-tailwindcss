@@ -9,7 +9,7 @@ module.exports = {
     "stylelint-order"
   ],
   rules:{
-    "selector-class-pattern": "^([a-z][a-z0-9]*(_[a-z0-9]+)*$)",
+    "selector-class-pattern": "^([a-z][a-z0-9]*(-[a-z0-9]+)*$)",
     "order/order":[
       "custom-properties",
       "declarations"
