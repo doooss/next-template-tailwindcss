@@ -1,9 +1,11 @@
-# 2022-10 Next js Template
+# 2022-11 Next js Template
 
 next-js eslint, prettier, tailwindcss, jest, testing-library, 배포 자동화가 적용된 기본 템플릿 
 
 
 작성된 깃헙 액션 작동방법
+
+0. main, prod 브랜치를 생성합니다.
 
 1. Github 계정 Setting -> Developer Setting -> personal access token 에서 repo 관련 권한을 가진 토큰 발급
 
