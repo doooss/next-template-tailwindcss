@@ -19,3 +19,6 @@ next-js eslint, prettier, tailwindcss, jest, testing-library, 배포 자동화�
 사용된 GITHUB ACTIONS 
 - [Release-Drafter](https://github.com/release-drafter/release-drafter) - ISC License
 - [InsonusK/get-latest-release](https://github.com/InsonusK/get-latest-release) - Apache 2.0 License
+
+lib
+- cva - Apache 2.0 License 
