@@ -16,9 +16,11 @@ next-js eslint, prettier, tailwindcss, jest, testing-library, 배포 자동화�
 4. 작성 된 Release 를 배포하면 prod branch 로 Release 된 자료가 자동으로 푸쉬가 일어납니다. (prod 브랜치를 배포용 브랜치로 연결해주면 배포 자동화 완료)
 
 
-사용된 GITHUB ACTIONS 
+MIT 의외 라이브러리 사항
+GITHUB ACTIONS 
 - [Release-Drafter](https://github.com/release-drafter/release-drafter) - ISC License
 - [InsonusK/get-latest-release](https://github.com/InsonusK/get-latest-release) - Apache 2.0 License
 
-lib
-- cva - Apache 2.0 License 
+Library 
+- [class-variance-authority](https://github.com/joe-bell/cva) - Apache-2.0 license
+
