@@ -1,10 +1,9 @@
-@import './fonts.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-    --sans-serif: lato, 'Noto Sans KR', 'Apple SD Gothic Neo', 'Segoe UI',
+    --sans-serif: 'Pretendard Variable', 'Apple SD Gothic Neo', 'Segoe UI',
         'Malgun Gothic', '맑은 고딕', '돋움', dotum, verdana, arial, sans-serif;
 }
 

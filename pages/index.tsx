@@ -1,7 +1,8 @@
 const Home = () => {
     return (
         <div>
-            <h1>The Next-js template with tailwindcss </h1>
+            <h1>Pretendard Font 프리텐다드 </h1>
+            <p>pretendard</p>
         </div>
     );
 };

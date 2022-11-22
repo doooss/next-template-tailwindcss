@@ -22,5 +22,7 @@ GITHUB ACTIONS
 - [InsonusK/get-latest-release](https://github.com/InsonusK/get-latest-release) - Apache 2.0 License
 
 Library 
-- [class-variance-authority](https://github.com/joe-bell/cva) - Apache-2.0 license
+- [class-variance-authority](https://github.com/joe-bell/cva) - Apache-2.0 License
 
+Font
+- [pretendard](https://github.com/orioncactus/pretendard) - OFL-1.1 License
