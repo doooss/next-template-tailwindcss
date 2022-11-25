@@ -1,9 +1,20 @@
 # 2022-11 Next js Template
 
-next-js eslint, prettier, tailwindcss, jest, testing-library, 배포 자동화가 적용된 기본 템플릿 
+next-js test, tailwindcss, 배포 자동화가 적용된 기본 템플릿 
+
+- [Convention](#convention)
+- [GITHUB ACTION 사용법](#github-action)
+- [License](#license)
 
 
-작성된 깃헙 액션 작동방법
+### Convention
+
+동적 스타일링 -> cva 이용하여 제작
+
+- src/styles or src/components 하위 ~.style.ts 로 제작하여 해당 폴더에 cva 를 이용해 동적 스타일링을 제작하면 safe-list 자동 생성
+
+
+### github action
 
 0. main, prod 브랜치를 생성합니다.
 
@@ -16,6 +27,15 @@ next-js eslint, prettier, tailwindcss, jest, testing-library, 배포 자동화�
 4. 작성 된 Release 를 배포하면 prod branch 로 Release 된 자료가 자동으로 푸쉬가 일어납니다. (prod 브랜치를 배포용 브랜치로 연결해주면 배포 자동화 완료)
 
 
-사용된 GITHUB ACTIONS 
+### License
+
+MIT 의외 라이브러리 사항
+GITHUB ACTIONS 
 - [Release-Drafter](https://github.com/release-drafter/release-drafter) - ISC License
 - [InsonusK/get-latest-release](https://github.com/InsonusK/get-latest-release) - Apache 2.0 License
+
+Library 
+- [class-variance-authority](https://github.com/joe-bell/cva) - Apache-2.0 License
+
+Font
+- [pretendard](https://github.com/orioncactus/pretendard) - OFL-1.1 License
