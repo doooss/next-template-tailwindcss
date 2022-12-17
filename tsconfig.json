@@ -6,12 +6,21 @@
       "@styles/*":[
         "src/styles/*"
       ],
-      "@elements/*":[
-        "src/components/elements/*"
-      ],
       "@Types/*":[
         "src/types/*"
-      ]
+      ],
+      "@utils/*":[
+        "src/utils/*"
+      ],
+      "@hooks/*":[
+        "src/hooks/*"
+      ],
+      "@store/*":[
+        "src/store/*"
+      ],
+      "@consts/*":[
+        "src/consts/*"
+      ],
     },
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
