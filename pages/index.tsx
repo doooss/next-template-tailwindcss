@@ -1,3 +1,5 @@
+import Button from 'src/components/Button';
+
 const Home = () => {
     return (
         <div>
@@ -8,9 +10,7 @@ const Home = () => {
             <h5>HEADING5 h5 Pretendard Font 프리텐다드 </h5>
             <h6>HEADING6 h6 Pretendard Font 프리텐다드 </h6>
             <p>프리텐다드</p>
-            <a href="">프리텐다드</a>
-            <b>프리텐다드</b>
-            <em>프리텐다드</em>
+            <Button />
         </div>
     );
 };
