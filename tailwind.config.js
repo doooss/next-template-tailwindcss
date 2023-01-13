@@ -3,7 +3,8 @@ module.exports = {
     content: [
         './pages/**/*.{js,ts,jsx,tsx}',
         './src/components/**/*.{js,ts,jsx,tsx}',
-        './public/safelist.txt',
+        './src/styles/**/*.{js,ts,jsx,tsx}',
+        // './app/**/*.{js,ts,jsx,tsx}',
     ],
     // JIT 모드를 유지한채로 Tailwind css 를 변수로 지정하고 싶으면 safelist 를 작성해야합니다.
     // safelist : [
