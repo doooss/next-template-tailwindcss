@@ -1,4 +1,4 @@
-# 2022-12 Next js Template
+# Next js tailwindcss Template
 
 next-js test, tailwindcss, 배포 자동화가 적용된 기본 템플릿
 
