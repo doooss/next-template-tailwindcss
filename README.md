@@ -2,7 +2,7 @@
 
 
 ```zsh
-https://github.com/doooss/next-template-tailwindcss
+git clone https://github.com/doooss/next-template-tailwindcss
 ```
 
 next-js test, tailwindcss, 배포 자동화가 적용된 기본 템플릿
