@@ -43,5 +43,3 @@ Library
 Font
 
 - [pretendard](https://github.com/orioncactus/pretendard) - OFL-1.1 License
-
-##
