@@ -28,6 +28,18 @@ next-js test, tailwindcss, 배포 자동화가 적용된 기본 템플릿
 
 4. 작성 된 Release 를 배포하면 prod branch 로 Release 된 자료가 자동으로 푸쉬가 일어납니다. (prod 브랜치를 배포용 브랜치로 연결해주면 배포 자동화 완료)
 
+## RELEASE
+
+1. 작업시에는 develop 브랜치를 활용하여 사용합니다.
+
+2. Develop 으로 PR 시에는 목적에 따라, feature, fix, refactor , hot-fix 라벨을 달아서 PR을 보냅니다.
+
+3. HOT-Fix 로 PR 을 받는 경우에는 develop 브랜치에 머지될 경우, Release drafter 가 작동됩니다.
+
+4. 이외 라벨들은 main 브랜치에 PR 이후 머지될 경우, relase drafter 가 작동됩니다.
+
+5. relaese drafter 로 작성된 릴리즈를 배포하면, prod 브랜치로 작업물이 생성되며 배포됩니다.
+
 ## License
 
 MIT 의외 라이브러리 사항
