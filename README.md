@@ -8,15 +8,14 @@ next-js test, tailwindcss, 배포 자동화가 적용된 기본 템플릿
 
 - [Convention](#convention)
 - [GITHUB ACTION 사용법](#github-action)
+- [Release](#release)
 - [License](#license)
 
 ## Convention
 
 동적 스타일링 -> cva 이용하여 제작
 
-- src/styles or src/components 하위 ~.style.ts 로 제작하여 해당 폴더에 cva 를 이용해 동적 스타일링을 제작하면 safe-list 자동 생성
-
-## github action
+## Github Action
 
 0. main, prod 브랜치를 생성합니다.
 
