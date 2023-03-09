@@ -21,6 +21,7 @@ categories:
 exclude-labels: 
   - 'deploy'
   - 'exclude'
+  - 'hot-fix'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 change-title-escapes: '\<*_&' 
 version-resolver:
