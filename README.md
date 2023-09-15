@@ -4,17 +4,21 @@
 git clone https://github.com/doooss/next-template-tailwindcss
 ```
 
-next-js test, tailwindcss, 배포 자동화가 적용된 기본 템플릿
+next-js test, tailwindcss, shadcn-ui, 배포 자동화가 적용된 기본 템플릿
 
-- [Convention](#convention)
+- [Command](#command)
 - [GITHUB ACTION 사용법](#github-action)
-- [License](#license)
+- [RELEASE](#release)
 
-## Convention
+## Command
 
-동적 스타일링 -> cva 이용하여 제작
+기본적인 next.js 커멘드에 한가지가 추가되었습니다.
 
-- src/styles or src/components 하위 ~.style.ts 로 제작하여 해당 폴더에 cva 를 이용해 동적 스타일링을 제작하면 safe-list 자동 생성
+```zsh
+pnpm gen
+```
+
+해당 커멘드를 활용하면, shadcn-ui 를 통해 radix-ui 의 컴포넌트를 생성할 수 있습니다.
 
 ## github action
 
@@ -39,19 +43,3 @@ next-js test, tailwindcss, 배포 자동화가 적용된 기본 템플릿
 4. 이외 라벨들은 main 브랜치에 PR 이후 머지될 경우, relase drafter 가 작동됩니다.
 
 5. relaese drafter 로 작성된 릴리즈를 배포하면, prod 브랜치로 작업물이 생성되며 배포됩니다.
-
-## License
-
-MIT 의외 라이브러리 사항
-GITHUB ACTIONS
-
-- [Release-Drafter](https://github.com/release-drafter/release-drafter) - ISC License
-- [InsonusK/get-latest-release](https://github.com/InsonusK/get-latest-release) - Apache 2.0 License
-
-Library
-
-- [class-variance-authority](https://github.com/joe-bell/cva) - Apache-2.0 License
-
-Font
-
-- [pretendard](https://github.com/orioncactus/pretendard) - OFL-1.1 License
