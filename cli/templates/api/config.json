@@ -1,0 +1,18 @@
+{
+    "description": "create a new api (app directory)",
+    "prompts": [
+        {
+            "type": "input",
+            "name": "name",
+            "message": "What is route folder name?"
+        }
+    ],
+    "baseUrl": "app/api",
+    "actions": [
+        {
+            "type": "add",
+            "path": "{{name}}/route.ts",
+            "templateFile": "route.hbs"
+        }
+    ]
+}
