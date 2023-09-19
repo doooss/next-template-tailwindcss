@@ -1,18 +1,18 @@
 name-template: '$RESOLVED_VERSION'
 tag-template: '$RESOLVED_VERSION'
 categories:
-  - title: 'Hot Fix'
-    labels:
-      - 'hot-fix'
+    - title: 'Hot Fix'
+      labels:
+          - 'hot-fix'
 inclue-labels:
-  - 'hot-fix'
+    - 'hot-fix'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
-change-title-escapes: '\<*_&' 
+change-title-escapes: '\<*_&'
 version-resolver:
-  patch:
-    labels:
-      - 'patch'
-  default: patch
+    patch:
+        labels:
+            - 'patch'
+    default: patch
 template: |
-  ## What's Changed
-  $CHANGES
+    ## What's Changed
+    $CHANGES

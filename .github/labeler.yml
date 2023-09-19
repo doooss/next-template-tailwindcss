@@ -1,0 +1,36 @@
+enable:
+    prs: true
+    issues: false
+labels:
+    'hot-fix':
+        include:
+            - '\bhot-fix?\b'
+    'feature':
+        include:
+            - '\bfeature[s]?\b'
+            - '\bfeat?\b'
+    'bug-fix':
+        include:
+            - '\bfix?\b'
+            - '\bbug-fix\b'
+    'refactor':
+        include:
+            - '\brefactor?\b'
+    'test':
+        include:
+            - '\btest?\b'
+    'build':
+        include:
+            - '\bbuild?\b'
+    'chore':
+        include:
+            - '\bchore?\b'
+    'revert':
+        include:
+            - '\brevert?\b'
+    'style':
+        include:
+            - '\bstyle?\b'
+    'remove':
+        include:
+            - '\bremove?\b'
