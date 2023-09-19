@@ -1,0 +1,22 @@
+import {{ name }} from './{{ name }}';
+
+describe('함수 공통 테스트', () => {
+    it('{{ name }} should be defined', () => {
+        expect({{ name }}).toBeDefined();
+    });
+
+    it('pure function test', () => {
+        // TODO: 함수가 순수함수인지 테스트 
+        // 1. 함수의 반환값이 항상 같은지
+        // 2. 함수의 인자값이 함수 실행이후 변하지 않는지
+
+        // const input = {}
+        // const _input = {...input}
+        // const firstResult = {{ name }}(input);
+        // const secondResult = {{ name }}(input);
+
+        // expect(firstResult).toStrictEqual(secondResult);
+
+        // expect(input).toStrictEqual(_input);
+    })
+});

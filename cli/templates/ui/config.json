@@ -1,0 +1,38 @@
+{
+    "baseUrl": "src/components",
+    "description": "Adds a new react component",
+    "prompts": [
+        {
+            "message": "What is the name of the component?",
+            "name": "name",
+            "type": "input"
+        }
+    ],
+    "actions": [
+        {
+            "path": "{{name}}/{{name}}.stories.tsx",
+            "templateFile": "storybook.hbs",
+            "type": "add"
+        },
+        {
+            "path": "{{name}}/index.ts",
+            "templateFile": "export.hbs",
+            "type": "add"
+        },
+        {
+            "path": "{{name}}/{{name}}.tsx",
+            "templateFile": "component.hbs",
+            "type": "add"
+        },
+        {
+            "path": "{{name}}/{{name}}.mdx",
+            "templateFile": "storybook-mdx.hbs",
+            "type": "add"
+        },
+        {
+            "path": "index.ts",
+            "template": "export { default as {{ name }} } from './{{ name }}';",
+            "type": "append"
+        }
+    ]
+}
