@@ -1,0 +1,29 @@
+import { NextResponse } from "next/server";
+
+// https://nextjs.org/docs/app/api-reference/functions/next-response
+// https://nextjs.org/docs/app/api-reference/file-conventions/route
+export async function GET(request: Request) {
+    return NextResponse.json({ hello: "world" });
+}
+
+// // Path: app/api/[item]/route.ts
+// export async function GET(request, context: {param}) {
+//     const itme = param.item
+// }
+
+// // Path: app/api/[tag]/[item]/route.ts
+// export async function GET(request, context: {param}) {
+//     const {tag, item}= param
+
+// }
+
+export async function HEAD(request: Request) {}
+ 
+export async function POST(request: Request) {}
+ 
+export async function PUT(request: Request) {}
+ 
+export async function DELETE(request: Request) {}
+ 
+export async function PATCH(request: Request) {}
+ 

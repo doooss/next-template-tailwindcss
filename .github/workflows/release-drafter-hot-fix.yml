@@ -1,22 +1,22 @@
-# when a pull request is merged into the develop branch with tag "hot-fix", the release drafter will create a new release with the tag "hot-fix" and the version number will be the same as the previous release. 
+# when a pull request is merged into the develop branch with tag "hot-fix", the release drafter will create a new release with the tag "hot-fix" and the version number will be the same as the previous release.
 
 name: echo branch name
-on: 
-  pull_request:
-    branches: 
-      - develop
-    types: 
-      - closed
+on:
+    pull_request:
+        branches:
+            - develop
+        types:
+            - closed
 jobs:
-  draft: 
-    if: github.event.pull_request.merged == true
-    permissions:
-      contents: write
-      pull-requests: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: release-drafter/release-drafter@v5
-        with:
-          config-name: release-drafter-config-hot-fix.yml
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+    draft:
+        if: github.event.pull_request.merged == true
+        permissions:
+            contents: write
+            pull-requests: write
+        runs-on: ubuntu-latest
+        steps:
+            - uses: release-drafter/release-drafter@v5
+              with:
+                  config-name: release-drafter-config-hot-fix.yml
+              env:
+                  GITHUB_TOKEN: ${{ secrets.TOKEN }}

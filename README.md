@@ -4,17 +4,29 @@
 git clone https://github.com/doooss/next-template-tailwindcss
 ```
 
-next-js test, tailwindcss, 배포 자동화가 적용된 기본 템플릿
+next-js test, tailwindcss, shadcn-ui, 배포 자동화가 적용된 기본 템플릿
 
-- [Convention](#convention)
+- [Command](#command)
 - [GITHUB ACTION 사용법](#github-action)
-- [License](#license)
+- [RELEASE](#release)
 
-## Convention
+## Command
 
-동적 스타일링 -> cva 이용하여 제작
+기본적인 next.js 커멘드에 몇가지가 추가되었습니다.
 
-- src/styles or src/components 하위 ~.style.ts 로 제작하여 해당 폴더에 cva 를 이용해 동적 스타일링을 제작하면 safe-list 자동 생성
+> 개인적인 용도의 cli 추가 cli/templates 에서 템플릿 조절 가능
+
+```zsh  
+pnpm gen
+```
+
+> shadcn-ui 기반 컴포넌트 생성 명령어
+
+```zsh
+pnpm gen:ui
+```
+
+해당 커멘드를 활용하면, shadcn-ui 를 통해 radix-ui 의 컴포넌트를 생성할 수 있습니다.
 
 ## github action
 
@@ -28,18 +40,14 @@ next-js test, tailwindcss, 배포 자동화가 적용된 기본 템플릿
 
 4. 작성 된 Release 를 배포하면 prod branch 로 Release 된 자료가 자동으로 푸쉬가 일어납니다. (prod 브랜치를 배포용 브랜치로 연결해주면 배포 자동화 완료)
 
-## License
+## RELEASE
 
-MIT 의외 라이브러리 사항
-GITHUB ACTIONS
+1. 작업시에는 develop 브랜치를 활용하여 사용합니다.
 
-- [Release-Drafter](https://github.com/release-drafter/release-drafter) - ISC License
-- [InsonusK/get-latest-release](https://github.com/InsonusK/get-latest-release) - Apache 2.0 License
+2. Develop 으로 PR 시에는 목적에 따라, feature, fix, refactor , hot-fix 라벨을 달아서 PR을 보냅니다.
 
-Library
+3. HOT-Fix 로 PR 을 받는 경우에는 develop 브랜치에 머지될 경우, Release drafter 가 작동됩니다.
 
-- [class-variance-authority](https://github.com/joe-bell/cva) - Apache-2.0 License
+4. 이외 라벨들은 main 브랜치에 PR 이후 머지될 경우, relase drafter 가 작동됩니다.
 
-Font
-
-- [pretendard](https://github.com/orioncactus/pretendard) - OFL-1.1 License
+5. relaese drafter 로 작성된 릴리즈를 배포하면, prod 브랜치로 작업물이 생성되며 배포됩니다.

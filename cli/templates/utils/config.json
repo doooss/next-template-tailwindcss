@@ -1,0 +1,33 @@
+{
+    "description": "add your utility function",
+    "baseUrl": "src/utils",
+    "prompts": [
+        {
+            "type": "input",
+            "name": "name",
+            "message": "What is the name of the util?"
+        }
+    ],
+    "actions": [
+        {
+            "type": "add",
+            "path": "{{name}}/{{name}}.test.ts",
+            "templateFile": "test.hbs"
+        },
+        {
+            "type": "add",
+            "path": "{{name}}/index.ts",
+            "templateFile": "export.hbs"
+        },
+        {
+            "type": "add",
+            "path": "{{name}}/{{name}}.ts",
+            "templateFile": "main.hbs"
+        },
+        {
+            "type": "append",
+            "path": "index.ts",
+            "template": "export { default as {{ name }} } from './{{ name }}'"
+        }
+    ]
+}

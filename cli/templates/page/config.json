@@ -1,0 +1,38 @@
+{
+    "description": "create a new route setup (app directory)",
+    "prompts": [
+        {
+            "type": "input",
+            "name": "name",
+            "message": "What is route folder name?"
+        }
+    ],
+    "baseUrl": "app",
+    "actions": [
+        {
+            "type": "add",
+            "path": "{{name}}/error.tsx",
+            "templateFile": "error.hbs"
+        },
+        {
+            "type": "add",
+            "path": "{{name}}/layout.tsx",
+            "templateFile": "layout.hbs"
+        },
+        {
+            "type": "add",
+            "path": "{{name}}/not-found.tsx",
+            "templateFile": "not-found.hbs"
+        },
+        {
+            "type": "add",
+            "path": "{{name}}/loading.tsx",
+            "templateFile": "loading.hbs"
+        },
+        {
+            "type": "add",
+            "path": "{{name}}/page.tsx",
+            "templateFile": "page.hbs"
+        }
+    ]
+}

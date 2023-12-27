@@ -1,0 +1,38 @@
+{
+    "description": "create a parallel route (app directory)",
+    "prompts": [
+        {
+            "type": "input",
+            "name": "name",
+            "message": "What is route folder name?"
+        }
+    ],
+    "baseUrl": "app",
+    "actions": [
+        {
+            "type": "add",
+            "path": "@{{name}}/error.tsx",
+            "templateFile": "error.hbs"
+        },
+        {
+            "type": "add",
+            "path": "@{{name}}/default.tsx",
+            "templateFile": "default.hbs"
+        },
+        {
+            "type": "add",
+            "path": "@{{name}}/not-found.tsx",
+            "templateFile": "not-found.hbs"
+        },
+        {
+            "type": "add",
+            "path": "@{{name}}/loading.tsx",
+            "templateFile": "loading.hbs"
+        },
+        {
+            "type": "add",
+            "path": "@{{name}}/page.tsx",
+            "templateFile": "page.hbs"
+        }
+    ]
+}
